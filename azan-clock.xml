@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML_DIZ_INFO>
+  <MASTER_PAD_VERSION_INFO><MASTER_PAD_VERSION>3.11</MASTER_PAD_VERSION></MASTER_PAD_VERSION_INFO>
+  <Company_Info>
+    <Company_Name>Azan Clock</Company_Name>
+    <Company_WebSite_URL>https://blank871.github.io/azan-clock/</Company_WebSite_URL>
+  </Company_Info>
+  <Program_Info>
+    <Program_Name>Azan Clock</Program_Name>
+    <Program_Version>1.0</Program_Version>
+    <Program_Release_Month>11</Program_Release_Month>
+    <Program_Release_Day>11</Program_Release_Day>
+    <Program_Release_Year>2026</Program_Release_Year>
+    <Program_Type>Freeware</Program_Type>
+    <Program_Release_Status>New Release</Program_Release_Status>
+    <Program_Install_Support>No Install Support</Program_Install_Support>
+    <Program_OS_Support>Windows 10,Windows 11</Program_OS_Support>
+    <Program_Language>English</Program_Language>
+    <Program_Category_Class>Home &amp; Hobby::Religion</Program_Category_Class>
+    <Program_System_Requirements>64-bit Windows 10 or 11</Program_System_Requirements>
+    <File_Info><File_Size_Bytes>14692864</File_Size_Bytes><File_Size_K>14348</File_Size_K><File_Size_MB>14.01</File_Size_MB></File_Info>
+  </Program_Info>
+  <Program_Descriptions>
+    <English>
+      <Keywords>azan, adhan, jamaat, prayer times, Windows, Maghrib</Keywords>
+      <Char_Desc_45>Daily prayer times and Azan alarms</Char_Desc_45>
+      <Char_Desc_80>Free Windows prayer clock with Azan and custom Jamaat alarms.</Char_Desc_80>
+      <Char_Desc_250>Azan Clock shows daily prayer times for your city and plays an Azan for each of the five prayers. Set separate Jamaat times and alarms, and keep the app in the Windows system tray.</Char_Desc_250>
+      <Char_Desc_450>Azan Clock shows daily prayer times for your city and plays an Azan for each of the five prayers. Set separate Jamaat times and alarms, and keep the app in the Windows system tray. Maghrib updates with the daily prayer schedule. The Windows app is free and ad-free.</Char_Desc_450>
+      <Char_Desc_2000>Azan Clock shows daily prayer times for your city and plays an Azan for each of the five prayers. Set separate Jamaat times and alarms, and keep the app in the Windows system tray. Maghrib updates with the daily prayer schedule. The Windows app is free and ad-free. Save the portable EXE in a permanent folder and open it. Keep Windows awake and signed in for alarms.</Char_Desc_2000>
+    </English>
+  </Program_Descriptions>
+  <Web_Info>
+    <Application_URLs>
+      <Application_Info_URL>https://blank871.github.io/azan-clock/?source=freeware-directory</Application_Info_URL>
+      <Application_Icon_URL>https://blank871.github.io/azan-clock/icon.png</Application_Icon_URL>
+      <Application_XML_File_URL>https://blank871.github.io/azan-clock/azan-clock.xml</Application_XML_File_URL>
+    </Application_URLs>
+    <Download_URLs><Primary_Download_URL>https://github.com/Blank871/azan-clock/releases/download/v1.0.0/AzanClock-directory.exe</Primary_Download_URL></Download_URLs>
+  </Web_Info>
+</XML_DIZ_INFO>
