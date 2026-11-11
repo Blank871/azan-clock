@@ -23,3 +23,45 @@ async function loadDownloads() {
 loadDownloads().catch(() => {
   status.textContent = "GitHub could not load the counts. Refresh this page to try again.";
 });
+
+const counterEndpoint = document.querySelector('meta[name="download-counter"]').content;
+const countryStatus = document.getElementById("country-status");
+const countries = new Intl.DisplayNames([document.documentElement.lang], { type: "region" });
+const sourceNames = new Map([
+  ["direct", "Official download page"],
+  ["launch-post", "Launch post"],
+  ["freeware-directory", "Freeware directory"],
+  ["dirfile", "DirFile"],
+  ["download3k", "Download3K"],
+  ["ilovefreesoftware", "I Love Free Software"],
+  ["launchpedia", "Launchpedia"]
+]);
+
+async function loadCountries() {
+  const response = await fetch(new URL("/stats", counterEndpoint));
+  if (!response.ok) throw new Error("Country counts unavailable");
+  const { results } = await response.json();
+  let total = 0;
+  const table = document.getElementById("country-table");
+  for (const { country, source, starts } of results) {
+    total += starts;
+    const row = table.tBodies[0].insertRow();
+    row.insertCell().textContent = country === "ZZ" ? "Unknown" : countries.of(country);
+    row.insertCell().textContent = sourceNames.get(source) || source;
+    row.insertCell().textContent = format.format(starts);
+  }
+  if (!results.length) {
+    countryStatus.textContent = "No download starts have been recorded yet.";
+    return;
+  }
+
+  countryStatus.textContent = format.format(total) + " download starts since tracking began.";
+  table.hidden = false;
+}
+
+if (counterEndpoint) {
+  countryStatus.textContent = "Loading country counts…";
+  loadCountries().catch(() => {
+    countryStatus.textContent = "Country counts are temporarily unavailable. Refresh to try again.";
+  });
+}
